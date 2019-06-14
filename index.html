@@ -3,65 +3,101 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title> ¯\_(ツ)_/¯ </title>
+		<title>About Me</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" href="dist/css/main.css">
-
-		<!--
-			Do I work in src or dist? Good question.
-
-			First of all, if you're a newbie and you don't want to worry about any of this
-			Prepros or Gulp stuff, or scss, or browser-syncing, just do everything in dist.
-			In fact, just delete the src folder.
-
-			If you're a geek and want to get into it, here's some background...
-
-			Prepros and Gulp do mostly the same things. Prepros is a GUI (it's pretty),
-			Gulp is a CLI (it's in the terminal, and it's ugly).
-
-			Both will watch your files, and where appropriate, they will error-check and
-			compile them from one format to another. To stay organized, we have to
-			split things up between the files we write: the *source* files in "src";
-			and the files they become: the files that get *distributed* on the web, in "dist".
-
-			So src/scss files become dist/css files,
-			And src/js files become dist/js files (that have been compiled down to ES5),
-			And src/img files become dist/img files (that have been compressed for you).
-
-			Anything that doesn't need compiling/compressing/error-checking (plugins, video, fonts, etc),
-			just put straight in *dist*.
-
-			One way to remember it is: you're only going to distribute *dist*. You keep the source files
-			to yourself, hidden from the world.
-
-			Go here to learn more about src and dist:
-				https://stackoverflow.com/questions/23730882/what-is-the-role-of-src-and-dist-folders
-			Or here for detailed instructions on setting up the gulp command line helper.
-				https://github.com/CreativeCircus/circus-starter
-
-			- Chris Silich
-		-->
+		<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Didact+Gothic|Homemade+Apple|Rock+Salt" rel="stylesheet">
 
 	</head>
 	<body>
 
-		<div class="floating-box">
-			<img class="logo" src="dist/img/logo.png" alt="Circus Logo">
-			<div class="foreground">
-				<h1>Hello World!</h1>
-				<p>Yep, you've got the Circus Starter project working.</p>
-				<p>Congratulations! You're ready to code.</p>
-				<p class="github">
-					<a target="_blank" rel="noopener" href="https://github.com/CreativeCircus/circus-starter">https://github.com/CreativeCircus/circus-starter</a>
-				</p>
-				<code>1.7.1</code>
+		<div class="wrapper">
+
+			<div class="column bioside">
+				<h1>Jasmin Surpris</h1>
+				<h2>Web Developer</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+				<button>Contact Me</button>
 			</div>
-			<div class="background"></div>
+		
+			<div class="column slideshowside">
+				 <div class="slide firstslide">
+					<img class="photos" src="dist/img/thinkjazz.png">
+					<img class="animation brain1" src="dist/img/brain.png">
+					<img class="animation heart1" src="dist/img/heart.png">
+				</div>
+				<div class = "slide secondslide">
+					<img class="photos" src="dist/img/runjazz.png">
+					<img class="animation game1" src="dist/img/game.png">
+					<img class="animation book1" src="dist/img/book.png">
+				</div>
+				<div class = "slide thirdslide">
+					<img class="photos" src="dist/img/lovejazz.png">
+					<img class="animation light1" src="dist/img/light.png">
+					<img class="animation magnify1" src="dist/img/magnify.png">
+				</div>
+				<!-- <div class = "slide fourthslide">
+					<img class="photos" src="dist/img/handsup.png">
+					<img class="animation" src="dist/img/game.png">
+					<img class="animation" src="dist/img/book.png">
+				</div> -->
+				<div class = "slide fifthslide">
+					<img class="photos" src="dist/img/jazzhands.png">
+					<img class="animation brain2" src="dist/img/brain.png">
+					<img class="animation heart2" src="dist/img/heart.png">
+				</div>
+			</div>
 		</div>
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 		<script src="dist/js/main.js"></script>
 
 	</body>
 </html>
+
+
+<!-- <div class="column slideshowside">
+				 <div class="slide firstslide">
+					<img class="photos" src="dist/img/thinkjazz.png">
+				</div>
+				<div class = "slide secondslide">
+					<img class="photos" src="dist/img/runjazz.png">
+				</div>
+				<div class = "slide thirdslide">
+					<img class="photos" src="dist/img/lovejazz.png">
+				</div>
+				<div class = "slide fourthslide">
+					<img class="photos" src="dist/img/handsup.png">
+				</div>
+				<div class = "slide fifthslide">
+					<img class="photos" src="dist/img/jazzhands.png">
+				</div>
+			</div> -->
+
+			<!-- <div class="column animationside">
+					 <div class="animate firstslide">
+					<img class="animation brain1" src="dist/img/brain.png">
+					<img class="animation heart1" src="dist/img/heart.png">
+				</div>
+				<div class = "animate secondslide">
+					<img class="animation game1" src="dist/img/game.png">
+					<img class="animation book1" src="dist/img/book.png">
+				</div>
+				<div class = "animate thirdslide">
+					<img class="animation light1" src="dist/img/light.png">
+					<img class="animation magnify1" src="dist/img/magnify.png">
+				</div>
+				<div class = "animate fourthslide">
+					<img class="animation" src="dist/img/game.png">
+					<img class="animation" src="dist/img/book.png">
+				</div>
+				<div class = "animate fifthslide">
+					<img class="animation brain2" src="dist/img/brain.png">
+					<img class="animation heart2" src="dist/img/heart.png">
+				</div>
+			</div> -->
